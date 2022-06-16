@@ -28,7 +28,6 @@
               <input
                 type="email"
                 name="email"
-                id="email"
                 class="input"
                 placeholder="Email"
               />
@@ -38,11 +37,11 @@
               <input
                 type="password"
                 name="password"
-                id="password"
                 class="password"
+                id="loginPw"
                 placeholder="Password"
               />
-              <i class="bx bx-hide eye-icon"></i>
+              <i class="bx bx-hide eye-icon show"></i>
             </div>
 
             <div class="form-link">
@@ -55,7 +54,7 @@
 
             <div class="form-link">
               <span>Don't have an account? </span
-              ><a href="#" class="signup-link">Signup</a>
+              ><a href="#" class="link signup-link">Signup</a>
             </div>
           </form>
         </div>
@@ -63,7 +62,7 @@
 
       <!-- Signup  Form session -->
 
-      <div class="form login">
+      <div class="form signup">
         <div class="form-content">
           <header class="title">Signup</header>
 
@@ -72,7 +71,6 @@
               <input
                 type="email"
                 name="email"
-                id="email"
                 class="input"
                 placeholder="Email"
               />
@@ -82,8 +80,8 @@
               <input
                 type="password"
                 name="password"
-                id="password"
                 class="password"
+                id="signupPw"
                 placeholder="Password"
               />
             </div>
@@ -91,11 +89,11 @@
               <input
                 type="password"
                 name="password"
-                id="password"
                 class="password"
-                placeholder="Password"
+                id="confirmPw"
+                placeholder="Confirm Password"
               />
-              <i class="bx bx-hide eye-icon"></i>
+              <i class="bx bx-hide eye-icon show" onclick="show()"></i>
             </div>
 
             <div class="field button-field">
@@ -104,11 +102,12 @@
 
             <div class="form-link">
               <span>Already have an account? </span
-              ><a href="#" class="signup-link">Login</a>
+              ><a href="#" class="link login-link">Login</a>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

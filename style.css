@@ -6,7 +6,7 @@
 }
 :root {
   --primary-color: #4070f4; /*#ffba00  |  #4070f4*/
-  --second-color: #ffba00;
+  --second-color: #1d2b3a;
 
   --font-color: #fff;
 }
@@ -31,6 +31,7 @@ a{
 }
 
 .form{
+  position: absolute;
   max-width: 32.5rem;
   width: 100%;
   padding: 3rem;
@@ -38,6 +39,14 @@ a{
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.form.signup{
+  opacity: 0;
+  pointer-events: none;
+}
+.forms.show-signup .form.signup{
+  opacity: 1;
+  pointer-events: auto;
 }
 header.title{
   font-size: 2.8rem;
@@ -70,8 +79,10 @@ form .field{
   padding: 0 1.5rem;
  }
  .field input:focus{
-  border-bottom-width:2px ;
+  border: 1px solid var(--primary-color) ;
+  box-shadow: 0 1px 5px #4070f441;
  }
+
  .eye-icon{
   position: absolute;
   top: 50%;
@@ -82,8 +93,11 @@ form .field{
   cursor: pointer;
   padding: 5px;
  }
+ .bx-show{
+  color: var(--primary-color);
+ }
  .field button {
-  background-color: #ffba00;
+  background-color: var(--primary-color);
   color: var(--font-color);
   font-weight: 600;
   letter-spacing: .9px;
@@ -92,8 +106,8 @@ form .field{
  }
  .field button:hover {
   background-color: #fff;
-  border: 2px solid #ffba00;
-  color: #ffba00;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 
  }
 
@@ -104,6 +118,10 @@ form .field{
  }
 
  .form-link .signup-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+ }
+ .form-link .login-link {
   font-size: 1.6rem;
   font-weight: 500;
  }
