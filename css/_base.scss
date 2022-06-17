@@ -1,0 +1,20 @@
+@mixin font16() {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Charis SIL', serif;}
+
+html {
+  font-size: 62.5%; 
+}
+body {
+  font-size: 1.4rem;
+}
+a {
+  text-decoration: none;
+}

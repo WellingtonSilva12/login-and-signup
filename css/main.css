@@ -1,71 +1,70 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Charis SIL", serif;
 }
-:root {
-  --primary-color: #4070f4; /*#ffba00  |  #4070f4*/
-  --second-color: #1d2b3a;
 
-  --font-color: #fff;
+html {
+  font-size: 62.5%;
 }
-html{
-  font-size: 62.5%; /* 1rem = 10px */
-}
-body{
+
+body {
   font-size: 1.4rem;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.container{
+
+.container {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-
-  background-color: var(--second-color);
+  background-color: #1d2b3a;
 }
 
-.form{
+.form {
   position: absolute;
   max-width: 32.5rem;
   width: 100%;
   padding: 3rem;
-  
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.form.signup{
+
+.form.signup {
   opacity: 0;
   pointer-events: none;
 }
-.forms.show-signup .form.signup{
+
+.forms.show-signup .form.signup {
   opacity: 1;
   pointer-events: auto;
 }
-header.title{
+
+header.title {
   font-size: 2.8rem;
   font-weight: 600;
   color: #232836;
   text-align: center;
 }
-form{
+
+form {
   margin-top: 3rem;
 }
-form .field{
+form .field {
   position: relative;
   height: 4.5rem;
   width: 100%;
   margin-top: 1.5rem;
-
 }
-.field input,
-.field button{
+form .field input,
+form .field button {
   height: 100%;
   width: 100%;
   border: none;
@@ -73,63 +72,55 @@ form .field{
   font-size: 1.6rem;
   font-weight: 400;
 }
- .field input{
+form .field input {
   outline: none;
   border: 1px solid #cacaca;
   padding: 0 1.5rem;
- }
- .field input:focus{
-  border: 1px solid var(--primary-color) ;
-  box-shadow: 0 1px 5px #4070f441;
- }
-
- .eye-icon{
+}
+form .field input:focus {
+  border: 1px solid #4070f4;
+  box-shadow: 0 1px 5px rgba(64, 112, 244, 0.2549019608);
+}
+form .field .eye-icon {
   position: absolute;
   top: 50%;
-  right:10px;
+  right: 10px;
   transform: translateY(-50%);
   font-size: 1.8rem;
   color: #8b8b8b;
   cursor: pointer;
   padding: 5px;
- }
- .bx-show{
-  color: var(--primary-color);
- }
- .field button {
-  background-color: var(--primary-color);
-  color: var(--font-color);
-  font-weight: 600;
-  letter-spacing: .9px;
-  transition: all .3s ease;
-  cursor: pointer;
- }
- .field button:hover {
-  background-color: #fff;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-
- }
-
-
- .form-link{
+}
+form .field .bx-show {
+  color: #4070f4;
+}
+form .form-link {
   text-align: center;
   margin-top: 1rem;
- }
-
- .form-link .signup-link {
-  font-size: 1.6rem;
-  font-weight: 500;
- }
- .form-link .login-link {
-  font-size: 1.6rem;
-  font-weight: 500;
- }
- .form a {
+}
+form .form-link a {
   color: #232836;
   text-decoration: none;
- }
-
- .form a:hover {
+}
+form .form-link a:hover {
   text-decoration: underline;
- }
+}
+form .form-link .signup-link,
+form .form-link .login-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+button {
+  background-color: #4070f4;
+  color: #FFF;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+buttonhover {
+  background-color: #FFF;
+  border: 2px solid #4070f4;
+  color: #4070f4;
+}/*# sourceMappingURL=main.css.map */
